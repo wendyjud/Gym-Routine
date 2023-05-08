@@ -37,6 +37,7 @@ Nota: hemos presentado unos problemas al subirlo al servidor, estamos intentando
 
 # Video resumido del funcionamiento:
 https://drive.google.com/file/d/1urIB2x_0m6SYCIjfEUucwr5o_TU5mOrs/view?usp=sharing
+
 # Algunas implementaciones pensadas a futuro:
 •	Hacer un blog interactivo y lograr realmente su propósito
 •	Incluir una barra de avance y nivel de dificultad para que el usuario pueda tener mayor ayuda en su desarrollo
