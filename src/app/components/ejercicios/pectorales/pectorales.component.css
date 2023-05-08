@@ -1,20 +1,28 @@
 .container-fluid{
     background-color: #ffffff10 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
 }
 
 .row{
     background-color:  #333333; 
 }
 .btn-primary{
-
-    background-color: #fd7d3d;
+    background-color: #8e15c1 !important;
+    color: #fffeff  !important;
+    
 }
 
 a:hover{
-    color: rgb(0, 0, 0) !important;
-    background-color: #fd7d3d !important;
+    color: #fffeff  !important;
+    background-color: #d3a5e6;
     }
 
 .titulo{
-    color:#fd7d3d;
+    color:#d3a5e6;
 }

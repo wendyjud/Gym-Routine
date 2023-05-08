@@ -1,6 +1,8 @@
+
 <div class="container-fluid ">
-  <div class="row">
+  <div class="row justify-content-center">
       <h1 class="text-center mt-3 titulo" >Ejercicios de Pectorales</h1>
+ 
         <div class="card text-center mx-2 my-2" *ngFor="let pectorales of listEjercicios" style="max-width: 28rem;">
           <div class="card-body">
             <h2 class="card-title"><strong>{{pectorales.ejercicio}}</strong></h2>
@@ -10,9 +12,9 @@
             <p class="card-text text-justify">{{pectorales.pasos}}</p>
             <a href="{{pectorales.link}}" class="btn btn-primary">Ver Vídeo</a>
           </div>
-        </div>
-    
+
     </div>
+  </div>
 </div>
 
  

@@ -2,3 +2,11 @@ p{
     font-family:'Times New Roman', Times, serif;
     text-align: justify;
 }
+
+.btn-primary{
+    background-color: #8e15c1 ;
+}
+
+.a, li , ul{
+    color: #d75f7d ;
+}

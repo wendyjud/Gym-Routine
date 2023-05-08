@@ -1,16 +1,16 @@
 
 a:hover{
     color: rgb(0, 0, 0) !important;
-    background-color: #fd7d3d !important;
+    background-color: #d75f7d !important;
     }
     .btn-outline-secondary{
-      color: #fd7d3d!important;
-      border-color: rgb(255, 149, 0);
+      color: #a87de5!important;
+      border-color: #a87de5;
       border-radius: 5px;
     }
     .btn-primary{
-      background-color: #fd7d3d!important;
-      border-color: rgb(255, 149, 0);
+      background-color: #d75f7d !important;
+      border-color: rgb(157, 0, 255);
       color: #000000;
     }
     .mt {

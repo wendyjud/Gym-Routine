@@ -5,5 +5,18 @@
 }
 
 .card{
-    background-color: #fd7d3d;
+    background-color: #d3a5e6 ;
+}
+
+.btn-primary{
+    background-color: #8e15c1 ;
+    border-color: rgb(118, 14, 223);
+    border-width: 5px;
+}
+
+.btn-primary:hover{
+    
+    background-color: #d3a5e6 ;
+    border-color: rgb(118, 14, 223);
+    border-width: 5px;
 }
