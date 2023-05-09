@@ -40,12 +40,20 @@
 
                             <button [disabled]="form.invalid"  class="btn btn-primary" type="submit" style="margin-left: 45% ;" >Enviar</button>
                         </form>
-                       
+                        
+                        <div class="d-flex" *ngFor="let mensaje of listMensajes" style="margin-top: 2% ;">
+                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://i.pinimg.com/564x/b7/ab/60/b7ab60839ad2b58a6c020b0fb0742efa.jpg" alt="..." width="50px"  height="50 px"/></div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Tú</div>
+                                {{mensaje.mensaje}}
+                                
+                            </div>
+                        </div>
+
                         <!-- Comment with nested comments-->
                         <div class="d-flex mb-4">
                             <!-- Parent comment-->
-                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://i.pinimg.com/originals/2a/ba/f9/2abaf90400d13ffa160296580a953456.jpg" alt="..." width="50px"  height="50 px"/></div>
-                            
+                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://i.pinimg.com/originals/2a/ba/f9/2abaf90400d13ffa160296580a953456.jpg" alt="..." width="50px" style="margin-top: 2% ;"  height="50 px"/></div>
                             <div class="ms-3">
                                 <div class="fw-bold">Diana Padilla</div>
                                 

@@ -14,7 +14,7 @@ export class BlogService {
         return this.firestore.collection('mensaje').add(mensaje);
     }
 
-    obtenerMensaje():Observable<any>{
+    obtenerMensajes():Observable<any>{
     return  this.firestore.collection('mensaje', ref=>ref.orderBy('mensaje', 'asc')).snapshotChanges();
 
     }
@@ -32,5 +32,6 @@ export class BlogService {
     getMensajeEdit(): Observable<BlogModel>{
         return this.mensaje$.asObservable();
   }
+  
 
 }
