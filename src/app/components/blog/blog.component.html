@@ -33,13 +33,22 @@
                 <div class="card bg-light">
                     <div class="card-body">
                         <!-- Comment form-->
-                        <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
+                        <form [formGroup]="form" (ngSubmit)="guardarMensaje()" class="mb-4"><textarea class="form-control" rows="3" formControlName="mensaje"  name="mensaje" id="mensaje" placeholder="Join the discussion and leave a comment!"></textarea>
+                            <!-- <a href="ruta_de_la_pagina"  class="btn btn-primary" type="submit" style="float: right;">
+                                <div class="flex-shrink-0"><img  src="https://i.pinimg.com/564x/10/8b/f5/108bf5de679e25b0f95daf2ff81304bd.jpg" alt="..." width="15px"  height="15 px" style="float: right;"/></div>
+                            </a>-->
+
+                            <button [disabled]="form.invalid"  class="btn btn-primary" type="submit" style="margin-left: 45% ;" >Enviar</button>
+                        </form>
+                       
                         <!-- Comment with nested comments-->
                         <div class="d-flex mb-4">
                             <!-- Parent comment-->
                             <div class="flex-shrink-0"><img class="rounded-circle" src="https://i.pinimg.com/originals/2a/ba/f9/2abaf90400d13ffa160296580a953456.jpg" alt="..." width="50px"  height="50 px"/></div>
+                            
                             <div class="ms-3">
                                 <div class="fw-bold">Diana Padilla</div>
+                                
                                 Exclente información, gracias por el aporte, en donde puedo albergar mis consejos a otros participantes?
                                 <!-- Child comment 1-->
                                 <div class="d-flex mt-4">
