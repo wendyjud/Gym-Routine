@@ -57,5 +57,11 @@ export class RutinaService {
  
    }
 
+   obtenerAsma():Observable<any>{
+    return  this.firestore.collection('asma', ref=>ref.orderBy('tipo', 'asc')).snapshotChanges();
+ 
+   }
+
+
    
 }

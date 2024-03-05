@@ -1,0 +1,21 @@
+.container-fluid{
+    background-color: #333333;
+}
+
+.link-color{
+    color:#41faeae7;
+}
+
+.row {
+
+        text-align: center;
+        text-justify: inter-word;
+
+      
+  }
+  
+.card-title{
+    color:#6b31b2e7;
+    text-align: center;text-decoration: dashed;
+    text-emphasis-color: bold;
+}

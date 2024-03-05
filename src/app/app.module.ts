@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule}from '@angular/forms';
 
 
+
 //Angular
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
@@ -52,6 +53,14 @@ import { BicepsComponent } from './components/ejercicios/biceps/biceps.component
 import { GluteosComponent } from './components/ejercicios/gluteos/gluteos.component';
 import { EspaldaComponent } from './components/ejercicios/espalda/espalda.component';
 import { EstiramientosComponent } from './components/estiramientos/estiramientos.component';
+import { ActividadesComponent } from './components/actividades/actividades.component';
+import { AsmaComponent } from './components/actividades/asma/asma.component';
+import { AsmaCalComponent } from './components/actividades/asma/asma-cal/asma-cal.component';
+import { RespiracionComponent } from './components/actividades/asma/respiracion/respiracion.component';
+import { AutocontrolComponent } from './components/actividades/asma/autocontrol/autocontrol.component';
+import { CardioCalComponent } from './components/actividades/cardiovascular/cardio-cal/cardio-cal.component';
+import { DiabetesCalComponent } from './components/actividades/diabetes/diabetes-cal/diabetes-cal.component';
+import { DiabetesEComponent } from './components/actividades/diabetes/diabetes-e/diabetes-e.component';
 
 
 
@@ -84,6 +93,14 @@ import { EstiramientosComponent } from './components/estiramientos/estiramientos
          GluteosComponent,
          EspaldaComponent,
          EstiramientosComponent,
+         ActividadesComponent,
+         AsmaComponent,
+         AsmaCalComponent,
+         RespiracionComponent,
+         AutocontrolComponent,
+         CardioCalComponent,
+         DiabetesCalComponent,
+         DiabetesEComponent,
       
          
   ],
@@ -129,6 +146,16 @@ import { EstiramientosComponent } from './components/estiramientos/estiramientos
       {path: 'pectorales', component: PectoralesComponent},
       {path: 'pierna', component:PiernaComponent },
       {path: 'triceps', component: TricepsComponent},
+
+      {path: 'actividades-especiales', component: ActividadesComponent},
+      {path: 'asma', component: AsmaComponent},
+      {path: 'calentamiento-asma', component: AsmaCalComponent},
+      {path: 'respiracion', component: RespiracionComponent},
+      {path: 'autocontrol', component: AutocontrolComponent},
+      {path: 'cardiovascular-cal', component: CardioCalComponent},
+
+      {path: 'diabetes-cal', component: DiabetesCalComponent},
+      {path: 'diabetes-e', component: DiabetesEComponent},
       
     ]),
     provideFirebaseApp(() => initializeApp(environment.firebase)),

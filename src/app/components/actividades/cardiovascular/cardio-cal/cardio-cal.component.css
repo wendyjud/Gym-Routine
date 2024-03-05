@@ -1,0 +1,16 @@
+.container-fluid{
+    background-color: #333333;
+}
+.link-color{
+    color:#41faeae7;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}

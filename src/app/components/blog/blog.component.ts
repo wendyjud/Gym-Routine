@@ -58,6 +58,11 @@ export class BlogComponent implements OnInit {
       console.log(error);
     })
   }
+
+  editandoMensaje(mensaje: BlogModel){
+    this._blogService.addMensajeEdit(mensaje);
+  }
+
   agregarMensaje(){
     //console.log(this.form); //podemos ver la salida de los datos
     const MENSAJE: BlogModel={
@@ -91,4 +96,15 @@ export class BlogComponent implements OnInit {
       console.log(this.listMensajes);
     })
   }
+
+  eliminarMensaje(id:any){
+    this._blogService.eliminarMensaje(id).then(()=>{
+      this.toastr.error('Comentario eliminado');
+    }, error=>{
+      this.toastr.error('Oppss! Algo ha salido mal', 'Intenta de nuevo');
+      console.log(error);
+    })
+  }
+
+
 }

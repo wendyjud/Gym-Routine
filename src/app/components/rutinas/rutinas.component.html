@@ -3,7 +3,7 @@
 
 <main> 
   <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-   <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+   <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 justify-content-center">
       <div class="col mb-4 py-5"> 
         <div class="card h-80 shadow-sm text-center"> 
            <div class="card-body"> 
@@ -30,9 +30,12 @@
            <div class="card-body"> 
              <div class="clearfix mb-0"> 
               <h2 class="card-title"><strong>Rutinas rápidas</strong></h2>
+              <div class="d-grid gap-0 my-4"> 
+                <p class="card-text">Aquí podrás encontrar rutinas de ejercicio prácticas y que no demoran mas de 15 min!</p>
+              </div> 
               <ul class="nav justify-content-center ">    
                 <li><a routerLink="/rapidas" class="btn btn-primary">  Más sobre rutinas rápidas</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a routerLink="/quemagrasa">Quemagrasa</a></li>
                         <li><a routerLink="/pierna-y-gluteo">Pierna y glúteo</a></li>
                         <li><a routerLink="/cardio-en-casa">Cardio en casa</a></li>
@@ -42,9 +45,7 @@
                 </li>
             </ul>
               </div> 
-              <div class="d-grid gap-0 my-4"> 
-                <p class="card-text">Aquí podrás encontrar rutinas de ejercicio prácticas y que no demoran mas de 15 min!</p>
-              </div> 
+
               
           </div> 
         </div> 
@@ -66,28 +67,61 @@
           </div> 
         </div> 
       </div> 
+    </div> 
 
-      <div class="col py-5"> 
-        <div class="card h-80 shadow-sm text-center"> 
-           <div class="card-body"> 
-             <div class="clearfix mb-3 "> 
+    <div class="tarjetas-container">
+      <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 justify-content-center">
+
+        <div class="col"> 
+          <div class="card h-79 shadow-sm text-center"> 
+             <div class="card-body"> 
               <h2 class="card-title"><strong>Estiramientos</strong></h2>
-              </div> 
-              <div class="d-grid gap-0 my-2"> 
-                <p class="card-text">No te ejercites sin antes haber calentado, evita lesiones.Aquí te sugerimos algunos ejercicios.</p>
-              </div> 
-              <ul class="nav justify-content-center ">      
-                <li><a routerLink="/estiramientos" class="btn btn-primary">  Más sobre Estiramientos</a>
-                </li>
-            </ul>
+                <div class="d-grid gap-0 my-2"> 
+                  <p class="card-text">No te ejercites sin antes haber calentado, evita lesiones.Aquí te sugerimos algunos ejercicios.</p>
+                </div> 
+                <ul class="nav justify-content-center ">      
+                  <li><a routerLink="/estiramientos" class="btn btn-primary">  Más sobre Estiramientos</a></li>
+                </ul>
+            </div> 
           </div> 
-        </div> 
-      </div> 
-      
+        </div> <!--1-->
+  
+        <div class="col"> 
+          <div class="card h-79 shadow-sm text-center"> 
+             <div class="card-body"> 
+              <h2 class="card-title"><strong>Actividades Especiales</strong></h2>
+                <div class="d-grid gap-0 my-2"> 
+                  <p class="card-text">No te ejercites sin antes haber calentado, evita lesiones.Aquí te sugerimos algunos ejercicios.</p>
+                </div> 
+                <ul class="nav justify-content-center ">    
+                  <li><a routerLink="/actividades-especiales" class="btn btn-primary">Actividades Especiales</a>
+                  </li>
+              </ul>
+            </div> 
+          </div> 
+        </div> <!--1-->
+  
+        <div class="col"> 
+          <div class="card h-79 shadow-sm text-center"> 
+             <div class="card-body"> 
+              <h2 class="card-title"><strong>Meditación</strong></h2>
+                <div class="d-grid gap-0 my-2"> 
+                  <p class="card-text">No te ejercites sin antes haber calentado, evita lesiones.Aquí te sugerimos algunos ejercicios.</p>
+                </div> 
+                <ul class="nav justify-content-center ">      
+                  <li><a routerLink="/estiramientos" class="btn btn-primary">  Más sobre Meditación</a></li>
+                </ul>
+            </div> 
+          </div> 
+        </div> <!--1-->
 
+    </div>
+
+    
 
 
     </div> 
+
   </div> 
 </main>
 </div>

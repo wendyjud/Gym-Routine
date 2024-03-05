@@ -1,6 +1,7 @@
 .container-fluid{
     background-color: #333333;
-    
+
+
 }
 .card{
     background-color: #ffffff;
@@ -44,3 +45,16 @@ ul, ol {
     right:-140px;
     top:0px;
 }
+
+/*Permite al submenú no taparse con la card de abajo*/
+.nav > li > ul {
+    position: absolute;
+    z-index: 999;
+  }
+
+  
+.card {
+    position: relative;
+
+    /* Otros estilos de la tarjeta */
+  }

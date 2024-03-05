@@ -38,7 +38,8 @@
                                 <div class="flex-shrink-0"><img  src="https://i.pinimg.com/564x/10/8b/f5/108bf5de679e25b0f95daf2ff81304bd.jpg" alt="..." width="15px"  height="15 px" style="float: right;"/></div>
                             </a>-->
 
-                            <button [disabled]="form.invalid"  class="btn btn-primary" type="submit" style="margin-left: 45% ;" >Enviar</button>
+                            <button [disabled]="form.invalid"  class="btn btn-primary boton" type="submit" style="float: right;" >Enviar</button>
+                        
                         </form>
                         
                         <div class="d-flex" *ngFor="let mensaje of listMensajes" style="margin-top: 2% ;">
@@ -46,7 +47,10 @@
                             <div class="ms-3">
                                 <div class="fw-bold">Tú</div>
                                 {{mensaje.mensaje}}
-                                
+                                <br>
+                                <i (click)="editandoMensaje(mensaje)" class="far fa-edit text-info"></i> |
+                                <i (click)="eliminarMensaje(mensaje.id)" class="far fa-solid fa-trash text-danger"></i>                                  
+    
                             </div>
                         </div>
 
@@ -107,15 +111,15 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <ul class="list-unstyled mb-0">
-                                <li><a href="#!" style="color:#d75f7d ;">Rutinas de otros usuarios</a></li>
-                                <li><a href="#!" style="color:#d75f7d ;">Plan de alimentación</a></li>
-                                <li><a href="#!" style="color:#d75f7d ;">Hábitos complementarios</a></li>
+                                <li><a routerLink="/blog"  style="color:#d75f7d ;">Rutinas de otros usuarios</a></li>
+                                <li><a href="https://www.breastcancer.org/es/organizar-la-vida/dieta-nutricion/en-que-consiste-la-alimentacion-saludable/disenar-un-plan-de-alimentacion" style="color:#d75f7d ;">Plan de alimentación</a></li>
+                                <li><a href="https://www.pisa.com.mx/2022/12/21/top-10-habitos-para-tener-mejor-salud/" style="color:#d75f7d ;">Hábitos complementarios</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
                             <ul class="list-unstyled mb-0">
-                                <li><a href="#!" style="color:#d75f7d ;">Mi opinión</a></li>
-                                <li><a href="#!" style="color:#d75f7d ;">Grupo en instagram</a></li>
+                                <li><a routerLink="/inicio-sesion"  style="color:#d75f7d ;">Mi opinión</a></li>
+                                <li><a href="https://www.instagram.com/" style="color:#d75f7d ;">Grupo en instagram</a></li>
                             </ul>
                         </div>
                     </div>
